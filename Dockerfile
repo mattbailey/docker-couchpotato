@@ -4,10 +4,7 @@ MAINTAINER Matt Bailey <m@mdb.io>
 RUN apt-get -q update && apt-get install -qy --force-yes  python git-core
 RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /CouchPotatoServer
 
-
 VOLUME /config
-VOLUME /data
-VOLUME /downloads
 
 ADD ./start.sh /start.sh
 RUN chmod u+x  /start.sh
