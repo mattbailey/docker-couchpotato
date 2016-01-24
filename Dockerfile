@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian:latest
 MAINTAINER Matt Bailey <m@mdb.io>
 
 RUN apt-get -q update && apt-get install -qy --force-yes  python git-core
